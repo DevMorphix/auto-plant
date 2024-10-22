@@ -88,11 +88,7 @@ app.get('/', (req, res) => {
     res.status(200).json({
         status: 200,
         message: 'Server is running',
-        endpoints: {
-            post_soil: '/soil - POST with JSON body {moisture: number, rawValue: number}',
-            get_soil: '/soil - GET with optional query parameter "value"',
-            status: '/status - GET server status'
-        }
+        
     });
 });
 
